@@ -859,6 +859,11 @@ h4 {
     right: 0;
 }
 
+.padding-topbottom {
+    padding-top: 135px;
+    padding-bottom: 135px;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
