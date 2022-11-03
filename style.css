@@ -851,6 +851,14 @@ h4 {
     font-style: italic;
 }
 
+.required::before {
+    content: "*";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -1018,6 +1026,7 @@ h4 {
     }
     .bloc-sm {
         padding-bottom: 0;
+        padding-top: 0;
     }
     .bloc-tile-2 .container,
     .bloc-tile-3 .container,
@@ -1058,9 +1067,18 @@ h4 {
         width: 180px;
         height: 320px;
     }
-    .img-responsive {
+    a[data-lightbox] {
         display: flex;
         justify-content: center;
+    }
+    .form-desc {
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .social-footer {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
